@@ -44,6 +44,7 @@ https
 const myModule = require('./my-module.js')
 console.log(myModule.myFunction())
 
+//promises.js
 const myPromise = new Promise((resolve, reject) => {
   if (condition) {
     resolve('Success!')
@@ -58,3 +59,14 @@ myPromise
   .catch((error) => {
     console.log(error)
   }) 
+
+  //asyncAWait.js
+  async function myFunction() {
+    try {
+      const result = await myPromise
+      console.log(result)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+  myFunction() 
