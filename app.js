@@ -71,3 +71,5 @@ myPromise
     }
   }
   myFunction() 
+
+  console.log("Hello World")
